@@ -1,0 +1,17 @@
+{
+  "name": "servidor-web-multithreaded",
+  "version": "1.0.0",
+  "main": "./src/server.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "start": "node dist/server.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  }
+}
