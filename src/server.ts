@@ -9,7 +9,7 @@ import extensionToContentTypeMap from './utils/extensionsToContentTypeMap';
 import availableResources from './utils/availableResources';
 
 const server = net.createServer();
-const SERVER_PORT = 8000;
+const SERVER_PORT = process.env.PORT || 8000;
 
 const handleConnection = (socket: Socket) => {
   socket.setDefaultEncoding('utf8');
